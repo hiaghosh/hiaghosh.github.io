@@ -1,31 +1,32 @@
 var app = angular.module('resume', [])
     .controller('personCtrl', function ($scope) {
-    $scope.personInfo = {
-        img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/152985/white-sands-x-resume.jpg',
-        name: 'Amie A. Wilt',
-        description: 'front end web developer with a kick of ruby on rails',
-        phone: {
-            text: '858.412.0343',
-            url: 'tel:+18584120343'
-        },
-        email: {
-            text: 'amie.wilt@gmail.com',
-            url: 'mailto:amie.wilt@gmail.com'
-        },
-        social: [{
-                url: 'https://github.com/amie-wilt',
-                icon: 'fa-github fa-lg'
+        $scope.personInfo = {
+            img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/152985/white-sands-x-resume.jpg',
+            name: 'Hia Ghosh',
+            description: 'MS-PhD student at University of Massachusetts Amherst',
+            phone: {
+                text: '413.345.9517',
+                url: 'tel:+14133459517'
+            },
+            email: {
+                text: 'hghosh@cs.umass.edu',
+                url: 'mailto:hghosh@cs.umass.edu'
+            },
+            social: [{
+                    url: 'https://github.com/hiaghosh',
+                    icon: 'fa-github fa-lg'
             }, {
-                url: 'https://www.linkedin.com/in/amiewilt',
-                icon: 'fa-linkedin fa-lg'
-            }, {
-                url: 'https://twitter.com/amie_wilt',
-                icon: 'fa-twitter fa-lg'
+                    url: 'https://www.linkedin.com/in/hia-ghosh/',
+                    icon: 'fa-linkedin fa-lg'
+            },
+                {
+                    url: 'https://drive.google.com/file/d/1w3UP478EpTEmfnfqYq2M-F7hjmCpe29k/view?usp=sharing',
+                    icon: 'fa-file-pdf-o fa-lg'
             }]
-    };
-})
+        };
+    })
     .controller('educationCtrl', function ($scope) {
-    $scope.schools = [{
+        $scope.schools = [{
             name: 'The Iron Yard',
             program: 'Ruby on Rails Engineering',
             city: 'Tampa Bay',
@@ -47,9 +48,9 @@ var app = angular.module('resume', [])
             stateAbbr: 'PA',
             dates: '2005 - 2010'
         }];
-})
+    })
     .controller('languagesCtrl', function ($scope) {
-    $scope.languages = [{
+        $scope.languages = [{
             name: 'HTML',
             types: [
                 'Slim',
@@ -79,9 +80,9 @@ var app = angular.module('resume', [])
                 'ERB'
             ]
         }];
-})
+    })
     .controller('toolsCtrl', function ($scope) {
-    $scope.tools = [{
+        $scope.tools = [{
             name: 'Source Control',
             types: [
                 'Git',
@@ -118,13 +119,13 @@ var app = angular.module('resume', [])
                 'Handlebars'
             ]
         }];
-})
+    })
     .controller('organizationCtrl', function ($scope) {
-    $scope.organizations = [
-        {
-            name: 'Ned Davis Research Group',
-            url: 'http://www.ndr.com',
-            positions: [{
+        $scope.organizations = [
+            {
+                name: 'Ned Davis Research Group',
+                url: 'http://www.ndr.com',
+                positions: [{
                     title: 'Front End Developer',
                     responsibilities: [
                         'Contribute to the public site and client-facing site',
@@ -134,12 +135,12 @@ var app = angular.module('resume', [])
                         'Version control with SVN and Git'
                     ]
                 }],
-            dates: 'January 2016 - Present'
+                dates: 'January 2016 - Present'
         },
-        {
-            name: '64 Interactive',
-            url: 'http://64interactive.com/',
-            positions: [{
+            {
+                name: '64 Interactive',
+                url: 'http://64interactive.com/',
+                positions: [{
                     title: 'Contract Front End Developer',
                     responsibilities: [
                         'Build and contribute to hand-coded  websites and applications',
@@ -149,12 +150,12 @@ var app = angular.module('resume', [])
                         'Version control with Git'
                     ]
                 }],
-            dates: 'February 2015 - Present'
+                dates: 'February 2015 - Present'
         },
-        {
-            name: 'Freelance',
-            url: 'https://github.com/amie-wilt',
-            positions: [{
+            {
+                name: 'Freelance',
+                url: 'https://github.com/amie-wilt',
+                positions: [{
                     title: 'Freelance Front End Developer',
                     responsibilities: [
                         'Build both static websites and dynamic applications using semantic HTML5, SCSS & Less, JavaScript and React',
@@ -163,12 +164,12 @@ var app = angular.module('resume', [])
                         'Version control with Git'
                     ]
                 }],
-            dates: 'September 2015 - Present'
+                dates: 'September 2015 - Present'
         },
-        {
-            name: 'Drive Digital Group',
-            url: 'http://www.drivedigitalgroup.com/',
-            positions: [{
+            {
+                name: 'Drive Digital Group',
+                url: 'http://www.drivedigitalgroup.com/',
+                positions: [{
                     title: 'Web Developer',
                     responsibilities: [
                         'Maintained client sites on Wordpress and other various CMS platforms',
@@ -177,29 +178,29 @@ var app = angular.module('resume', [])
                         'Implemented white hat SEO tactics'
                     ]
                 }],
-            dates: 'August 2014 - March 2015'
+                dates: 'August 2014 - March 2015'
         }
     ];
-})
+    })
     .controller('campsCtrl', function ($scope) {
-    $scope.camps = [
-        {
-            name: 'Kids\' HTML/CSS Classes',
-            url: 'https://github.com/amie-wilt/tiy-kids-html-css',
-            dates: 'March - April 2016',
-            description: 'In early spring, I had the pleasure of volunteering as the instructor for the Kids\' HTML/CSS class at The Iron Yard in St Pete. I prepared with some slides and fun ideas only to find out I was a little in over my head! I was surprised by how fast the kids picked up on coding and appreciated the opportunity to not only work with them, but to also have to articulate code.'
+        $scope.camps = [
+            {
+                name: 'Kids\' HTML/CSS Classes',
+                url: 'https://github.com/amie-wilt/tiy-kids-html-css',
+                dates: 'March - April 2016',
+                description: 'In early spring, I had the pleasure of volunteering as the instructor for the Kids\' HTML/CSS class at The Iron Yard in St Pete. I prepared with some slides and fun ideas only to find out I was a little in over my head! I was surprised by how fast the kids picked up on coding and appreciated the opportunity to not only work with them, but to also have to articulate code.'
         },
-        {
-            name: 'ReactJS Camp',
-            url: 'http://reactjscamp.com/',
-            dates: 'December 4 - 9, 2015',
-            description: 'ReactJS camp is a 5-day, online coding camp led by Samer Buna. We did a thorough overview on React and JSX, and React\'s implementation with Flux and Relay. We learned how to set up a Node.js server with Express.js and about different development environments for React, such as Webpack and JSPM. He also went over GraphQL, ES2015 and debugging in React.'
+            {
+                name: 'ReactJS Camp',
+                url: 'http://reactjscamp.com/',
+                dates: 'December 4 - 9, 2015',
+                description: 'ReactJS camp is a 5-day, online coding camp led by Samer Buna. We did a thorough overview on React and JSX, and React\'s implementation with Flux and Relay. We learned how to set up a Node.js server with Express.js and about different development environments for React, such as Webpack and JSPM. He also went over GraphQL, ES2015 and debugging in React.'
         },
-        {
-            name: 'Front End Design Conference',
-            url: 'http://frontenddesignconference.com/2015/',
-            dates: 'May 21-22, 2015',
-            description: 'Aside from attending numerous talks, I also participated in the front-end testing and tooling workshop. We learned about task runners like Grunt, browser-testing tools like Browserstack, and JS testing frameworks, such as Jasmine.'
+            {
+                name: 'Front End Design Conference',
+                url: 'http://frontenddesignconference.com/2015/',
+                dates: 'May 21-22, 2015',
+                description: 'Aside from attending numerous talks, I also participated in the front-end testing and tooling workshop. We learned about task runners like Grunt, browser-testing tools like Browserstack, and JS testing frameworks, such as Jasmine.'
         }
     ];
-});
+    });
