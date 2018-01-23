@@ -1,7 +1,7 @@
 var app = angular.module('resume', [])
     .controller('personCtrl', function ($scope) {
         $scope.personInfo = {
-            img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/152985/white-sands-x-resume.jpg',
+            img: 'hia.jpg',
             name: 'Hia Ghosh',
             description: 'MS-PhD student at University of Massachusetts Amherst',
             phone: {
